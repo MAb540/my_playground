@@ -1,0 +1,14 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "dateOfBirth": "1997/10/19",
+        "email": "john.doe@gmail.com"
+    },
+    {
+        "firstName": "Mary",
+        "lastName": "Ann",
+        "dateOfBirth": "1995/03/09",
+        "email": "mary.ann@foobar.com"
+    }
+]
