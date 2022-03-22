@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .table-row {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0.5rem;
+        border: 1px solid rgb(184, 196, 209);
+      }
+
+      .td-style {
+        margin: 0.5rem;
+        padding: 1rem;       
+        border: 1px solid rgb(229, 241, 229);
+        box-shadow: 4px -12px 27px -9px rgba(232, 242, 243, 0.64);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="test_h1">This is mock Interview</h1>
+
+    <button id="next_btn">Next</button>
+    <h2>Today Date: <span id="todayDate"></span></h2>
+    <button id="prev_btn">Prev</button>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <table>
+      <thead>
+        <tr id="label-thead-row" class="table-row"></tr>
+      </thead>
+
+      <tbody id="label-tbody"></tbody>
+    </table>
+
+    <script src="./test.js"></script>
+  </body>
+</html>
