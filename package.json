@@ -1,0 +1,31 @@
+{
+  "name": "mkext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "babel-preset-solid": "^1.4.8",
+    "clean-webpack-plugin": "^4.0.0",
+    "source-map-loader": "^4.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-extension-manifest-plugin": "^0.8.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@suid/material": "^0.4.3",
+    "i": "^0.3.7",
+    "npm": "^8.15.1",
+    "solid-js": "^1.4.8"
+  }
+}
