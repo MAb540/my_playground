@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Extension with Solid & Vite",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "options_page": "./src/nested/options.html",
+  "background": {
+    "service_worker": "./assets/background.bundle.js"
+  },
+  "action": {
+    "default_popup": "./src/nested/popup.html",
+    "default_icon": "icon-34.png"
+  }
+}
