@@ -1,18 +1,18 @@
 from array import *
 
 
-# def recur_permut(arr, ds, frequency_arr):
-#     if len(arr) == len(ds):
-#         print(ds)
-#         return
+def recur_permut(arr, ds, frequency_arr):
+    if len(arr) == len(ds):
+        print(ds)
+        return
 
-#     for i in range(len(arr)):
-#         if not frequency_arr[i]:
-#             frequency_arr[i] = True
-#             ds.append(arr[i])
-#             recur_permut(arr, ds, frequency_arr)
-#             ds.remove(arr[i])
-#             frequency_arr[i] = False
+    for i in range(len(arr)):
+        if not frequency_arr[i]:
+            frequency_arr[i] = True
+            ds.append(arr[i])
+            recur_permut(arr, ds, frequency_arr)
+            ds.remove(arr[i])
+            frequency_arr[i] = False
 
 
 # def recur_permut(arr, ds, frequency_arr, ans_ds):
@@ -32,12 +32,12 @@ from array import *
 #             frequency_arr[i] = False
 
 
-# arr = [1, 2]
-# n = len(arr)
-# freq_ds = array('i', [0]*n)
+arr = [1, 2, 3]
+n = len(arr)
+freq_ds = array('i', [0]*n)
 
-# ans_ds = []
-
+ans_ds = []
+recur_permut(arr, [], freq_ds)
 # recur_permut(arr, [], freq_ds, ans_ds)
 # print('ans_ds: ', ans_ds)
 
@@ -66,51 +66,51 @@ from array import *
 
 # n queens problem using recursion
 
-# def is_safe(row, col, board, n):
+def is_safe(row, col, board, n):
 
-#     dup_row = row
-#     dup_col = col
+    dup_row = row
+    dup_col = col
 
-#     while row >= 0 and col >= 0:
-#         if board[row][col] == 'Q':
-#             return False
-#         row -= 1
-#         col -= 1
+    while row >= 0 and col >= 0:
+        if board[row][col] == 'Q':
+            return False
+        row -= 1
+        col -= 1
 
-#     row = dup_row
-#     col = dup_col
+    row = dup_row
+    col = dup_col
 
-#     while col >= 0:
-#         if board[row][col] == 'Q':
-#             return False
-#         col -= 1
+    while col >= 0:
+        if board[row][col] == 'Q':
+            return False
+        col -= 1
 
-#     row = dup_row
-#     col = dup_col
+    row = dup_row
+    col = dup_col
 
-#     while row < n and col >= 0:
-#         if board[row][col] == 'Q':
-#             return False
-#         row += 1
-#         col -= 1
+    while row < n and col >= 0:
+        if board[row][col] == 'Q':
+            return False
+        row += 1
+        col -= 1
 
-#     return True
+    return True
 
 
-# def n_queen(col, board, ans, n):
+def n_queen(col, board, ans, n):
 
-#     if col == n:
-#         # aa = board.copy()
-#         print(board)
-#         # ans.append(aa)
-#         return
+    if col == n:
+        # aa = board.copy()
+        print(board)
+        # ans.append(aa)
+        return
 
-#     for row in range(0, n):
+    for row in range(0, n):
 
-#         if(is_safe(row, col, board, n)):
-#             board[row][col] = 'Q'
-#             n_queen(col+1, board, ans, n)
-#             board[row][col] = '.'
+        if(is_safe(row, col, board, n)):
+            board[row][col] = 'Q'
+            n_queen(col+1, board, ans, n)
+            board[row][col] = '.'
 
 
 # def n_queen(col, board, ans, n, l_r, l_d, u_d):
@@ -131,16 +131,16 @@ from array import *
 #             u_d[n-1 + col - row] = 0
 
 
-# n = 4
-# left_row = [0 for i in range(n)]
-# upper_diagonal = [0 for i in range(2*n)]
-# lower_diagonal = [0 for i in range(2*n)]
+n = 4
+left_row = [0 for i in range(n)]
+upper_diagonal = [0 for i in range(2*n)]
+lower_diagonal = [0 for i in range(2*n)]
 
-# board = []
-# ans = []
+board = []
+ans = []
 
-# for i in range(4):
-#     board.append(['.' for _ in range(4)])
+for i in range(4):
+    board.append(['.' for _ in range(4)])
 
 
-# n_queen(0, board, ans, n, left_row, lower_diagonal, upper_diagonal)
+n_queen(0, board, ans, n, left_row, lower_diagonal, upper_diagonal)

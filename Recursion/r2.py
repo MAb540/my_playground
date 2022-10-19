@@ -33,7 +33,7 @@
 
 # power sum problem
 # from collections import deque
-# import math
+import math
 
 
 # def power_sum(num, n):
@@ -68,23 +68,18 @@
 
 # print(power_sum(4, 2))
 
-
 # def power_sum_rec(total, pow, num):
-
 #     ans = total - math.pow(num, pow)
-
 #     if ans < 0:
 #         return 0
 
 #     if ans == 0:
 #         return 1
-
 #     return power_sum_rec(ans, pow, num+1) + power_sum_rec(total, pow, num+1)
-
 
 # print(power_sum_rec(4, 2, 1))
 
-# write a function that calculated power sum using recursion
+# write a function that calculates power sum using recursion
 # def calculate_power_sum(total, num, pow_to):
 
 #     result = total - math.pow(num, pow_to)
@@ -161,20 +156,20 @@
 # print(superDigit('123', 3))
 
 # time complexity will of of 2 power n and log of 2 power n
-# def sub_set(ind, summ, arr, sum_arr):
-#     if ind >= len(arr):
-#         sum_arr.append(summ)
-#         sum_arr.sort()
-#         return
+def sub_set(ind, summ, arr, sum_arr):
+    if ind >= len(arr):
+        sum_arr.append(summ)
+        # sum_arr.sort()
+        return
 
-#     sub_set(ind+1, summ + arr[ind], arr, sum_arr)
-#     sub_set(ind+1, summ, arr, sum_arr)
+    sub_set(ind+1, summ + arr[ind], arr, sum_arr)
+    sub_set(ind+1, summ, arr, sum_arr)
 
 
-# arr = [2, 3]
-# sum_arr = []
-# sub_set(0, 0, arr, sum_arr)
-# print(sum_arr)
+arr = [3, 1, 2]
+sum_arr = []
+sub_set(0, 0, arr, sum_arr)
+print(sum_arr)
 
 # Subset || problem
 
@@ -188,6 +183,7 @@
 #         empty_arr.append(arr[i])
 #         all_possible_sub_sets(i+1, empty_arr, arr)
 #         empty_arr.remove(arr[i])
+
 
 # arr = [1, 2]
 # all_possible_sub_sets(0, [], arr)
