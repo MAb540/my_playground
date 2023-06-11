@@ -1,6 +1,6 @@
 # my_playground
 
-This repo will be a playground to learn and explore new tech stach and concepts.
+This repo will be a playground to learn and explore new tech stack and concepts.
 
 
 ## JS understanding the Weird Parts
