@@ -1,0 +1,21 @@
+{
+  "name": "node-server-exploration",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "to explore node js server",
+  "main": "index.js",
+  "repository": "git@github.com:MAb540/my_playground.git",
+  "author": "MAb",
+  "license": "MIT",
+
+  "scripts": {
+    "dev": "node src/rawTcp"
+  },
+
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": "1.22.x",
+    "npm": "off"
+  }
+
+}
