@@ -9,11 +9,11 @@
   "license": "MIT",
 
   "scripts": {
-    "dev": "node src/rawTcp"
+    "dev": "node --watch src/rawTcp"
   },
 
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=19.0.0",
     "yarn": "1.22.x",
     "npm": "off"
   }
